@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            document.write("Hello PageA!")
+            function changeSrc()
+            {
+                document.getElementById("myframe").src="./PageB.html";
+            }
+        </script>
+    </head>
+    <body>
+
+        <iframe id="myframe" src="PageA.html">
+            <p>Your browser does not support iframes.</p>
+        </iframe>
+        <br><br>
+
+        <input type="button" onclick="changeSrc()" value="Change Source">
+
+    </body>
+</html>
+
