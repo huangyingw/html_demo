@@ -3,8 +3,11 @@
     <script>
         // the onload function of frame would be executed before the parent onload function
         window.onload=function(){alert("page src load")};
+        var varP = parentVar;
         function changeSrc()
         {
+            var varParentA = window.myframe.varA;
+            var varParentB = window.myframe.varB;
             document.getElementById("myframe").src="./frameb.html";
         }
     </script>
