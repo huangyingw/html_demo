@@ -4,7 +4,6 @@
         <script>
             window.onload=function(){alert("page src load")};
             //the js in frame will be executed before current page
-            document.write("Hello src page")
             function changeSrc()
             {
                 document.getElementById("myframe").src="./PageB.html";
@@ -14,6 +13,7 @@
     <body>
         <iframe id="myframe" src="PageA.html">
         </iframe>
+        Hello src page
         <input type="button" onclick="changeSrc()" value="Change Source">
     </body>
 </html>
