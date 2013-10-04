@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script>
-            window.onload=function(){alert("page src load")};
-            //the js in frame will be executed before current page
-            function changeSrc()
-            {
-                document.getElementById("myframe").src="./frameb.html";
-            }
-        </script>
-    </head>
+    <script>
+        // the onload function of frame would be executed before the parent onload function
+        window.onload=function(){alert("page src load")};
+        function changeSrc()
+        {
+            document.getElementById("myframe").src="./frameb.html";
+        }
+    </script>
     <body>
         <iframe id="myframe" src="./framea.html">
         </iframe>
