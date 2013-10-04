@@ -6,12 +6,12 @@
             //the js in frame will be executed before current page
             function changeSrc()
             {
-                document.getElementById("myframe").src="frameb.html";
+                document.getElementById("myframe").src="./frameb.html";
             }
         </script>
     </head>
     <body>
-        <iframe id="myframe" src="framea.html">
+        <iframe id="myframe" src="./framea.html">
         </iframe>
         Hello src page
         <input type="button" onclick="changeSrc()" value="Change Source">
