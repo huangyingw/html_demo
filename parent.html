@@ -6,15 +6,20 @@
         var varP = parentVar;
         function changeSrc()
         {
-            var varParentA = window.myframe.varA;
-            var varParentB = window.myframe.varB;
+            var varA = window.frames[0].varA;
+            var varB = window.frames[0].varB;
+            alert(varA);
+            alert(varB);
             document.getElementById("myframe").src="./frameb.html";
+            alert("after src change");
+            alert(varA);
+            alert(varB);
         }
     </script>
     <body>
         <iframe id="myframe" src="./framea.html">
         </iframe>
-        Hello src page
+        Hello parent page
         <input type="button" onclick="changeSrc()" value="Change Source">
     </body>
 </html>

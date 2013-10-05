@@ -3,8 +3,10 @@
     <script>
         window.onload=function(){alert("FrameB load")};
         var varB = frameVarB;
-    </script> 
+        var varP = parent.varP;
+        alert(varP);
+    </script>
     <body>
-        Hello PageB.html
+        Hello PageB
     </body>
 </html>
