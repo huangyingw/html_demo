@@ -2,18 +2,14 @@
 <html>
     <script>
         // the onload function of frame would be executed before the parent onload function
-        window.onload=function(){alert("page src load")};
-        var varP = parentVar;
+        window.onload=function(){alert("page parent load")};
+        var varP = 'frameVarP';
         function changeSrc()
         {
-            var varA = window.frames[0].varA;
-            var varB = window.frames[0].varB;
-            alert(varA);
-            alert(varB);
             document.getElementById("myframe").src="./frameb.html";
-            alert("after src change");
-            alert(varA);
-            alert(varB);
+            alert("after change");
+            alert(window['varA']);
+            alert(window['varB']);
         }
     </script>
     <body>

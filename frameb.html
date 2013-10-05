@@ -2,8 +2,9 @@
 <html>
     <script>
         window.onload=function(){alert("FrameB load")};
-        var varB = frameVarB;
+        var varB = 'frameVarB';
         var varP = parent.varP;
+        alert(window['varB']);
         alert(varP);
     </script>
     <body>

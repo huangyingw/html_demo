@@ -2,8 +2,8 @@
 <html>
     <script>
         window.onload=function(){alert("FrameA load")};
-        var varA = frameVarA;
-        alert(varA);
+        var varA = 'frameVarA';
+        alert(window['varA']);
     </script> 
     <body>
         Hello PageA
