@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <script>
-        window.onload=function(){alert("FrameA load")};
+        window.onload=function(){alert("FrameA loaded")};
         var varA = 'frameVarA';
         alert(window['varA']);
+        alert(parent.varP);
     </script> 
     <body>
         Hello PageA
