@@ -11,12 +11,12 @@
         function changeSrc()
         {
             alert("before change");
-            alert(window['varA']);
-            alert(window['varB']);
+            alert(window.frames[0]['varA']);
+            alert(window.frames[0]['varB']);
             document.getElementById("myframe").src="./frameb.html";
             alert("after change");
-            alert(window['varA']);
-            alert(window['varB']);
+            alert(window.frames[0]['varA']);
+            alert(window.frames[0]['varB']);
         }
     </script>
     <body>
